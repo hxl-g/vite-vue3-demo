@@ -1,0 +1,140 @@
+/* 统一各端基础样式 */
+
+html,
+body,
+div,
+a,
+p,
+span,
+i,
+li,
+ul,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  outline: transparent none 0px;
+  text-decoration: none !important;
+}
+
+input {
+  border: 0 none;
+  vertical-align: middle;
+  -webkit-appearance: none !important;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-weight: 400;
+  color: #4a597a;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-weight: 400;
+  color: #4a597a;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-weight: 400;
+  color: #4a597a;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-weight: 400;
+  color: #4a597a;
+}
+
+input:focus,
+textarea:focus {
+  caret-color: #3b7aff;
+}
+
+textarea {
+  font-family: initial;
+}
+
+button {
+  border: none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f0f2f6;
+  min-width: 1280px;
+  color: #4a597a;
+  line-height: normal;
+  font-size: 14px;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', Arial, sans-serif;
+}
+//去掉input[type=“number“]的默认样式
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+} /* chrome */
+
+input[type='number'] {
+  -moz-appearance: textfield;
+} /* firefox */
+
+// 滚动条整体样式
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+// 滚动条里面小方块
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #dce2f0;
+}
+
+// 滚动条里面轨道
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: #f7faff;
+}
